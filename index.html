@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
     <head>
         <title>Multitext tu mejor opcion</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=5">
+        <meta name="viewport" content="width=device-width, initial-scale=3">
 
         <link rel="logo3" href="img/logo3.png" type=".png">
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="img/logo3.png" type="imag.png" sizes="120px">
+		<link rel="icon" href="img/logo3.png" type="img.png" sizes="120px">
 	    <!--
 		<script language="JavaScript" type="text/javascript">
 		function Abrir_ventana (pagina) {
@@ -51,7 +51,7 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-12">
 				<div class="lft_hd">
-					<a href="index.html"><img src="img/logo3.png" alt="logomultitext" width="85px" height="85px"/></a>
+				<a href="index.html"><img src="img/logo3.png" alt="logomultitext" height="110x" width="100px"/></a>
 				</div>
 			</div>			
 			<div class="col-lg-9 col-md-9 col-sm-12">
@@ -65,8 +65,8 @@
 							</button>	
 						<div id="navbar">
 							<ul>
-								<li><a class="page-scroll" href="index.html">Inicio</a> </li> 
-							<li><a href="#">Buscador<i class="fa fa-angle-down"></i></a>
+								
+							<li><a href="#">Navegador<i class="fa fa-angle-down"></i></a>
 							<ul>
 								<li><a class="page-scroll" href="#tm_sec"> Nuestro Equipo </a></li>
 								<li><a class="page-scroll" href="#tstm_sec"> Habilidades </a></li>
@@ -452,7 +452,7 @@
 					</div>									
 					<div class="sngl_team">						
 						<img src="http://wedesignthemes.com/themes/dt-mountcool/wp-content/uploads/2015/10/img-1.png" alt=""/>	
-						<h3>Karen Aralla</h3>
+						<h3>Karen Araya</h3>
 						<span><p>Gerente Produccion</p></span>						
 					</div>					
 					<div class="sngl_team">						
@@ -617,7 +617,7 @@
 				<div class="lts_pst">						
 					<img src="https://sonivision.co.cr/wp-content/uploads/2015/06/Logo-FOD-e1433515270443.jpg"/>
 					<h2> Omar Dengo </h2>
-					<p> La empresa de Multitex™ esta altamente complacido con el apoyo brindado hacia la compañia por lo que esperamos recompensar su apoyo brindado </p>
+					<p> La empresa de Multitext esta altamente complacido con el apoyo brindado hacia la compañia por lo que esperamos recompensar su apoyo brindado </p>
 										
 				</div>
 			</div>			
@@ -625,7 +625,7 @@
 				<div class="lts_pst">						
 					<img src=https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/48421668_2198434833811293_1539822573926219776_n.jpg?_nc_cat=100&_nc_oc=AQkL7kSn-eM1NiqfJv_Uxd_kGG_gvl9kr-TlwFm90JMa-vyrvfZc0KK9NglUi84YeJg&_nc_ht=scontent-mia3-1.xx&oh=ac0d1f82ba90207646d572acbb943b22&oe=5E102A56 />
 					<h2> C.T.P Invu las Cañas </h2>
-					<p>La empresa de Multitex™ da las gracias al CTP Invu las Cañas por permitir el  desarrollo de esta empresa la cual nos permitira formarnos como personas y aprender mas sobre el ambiente laboral<p>
+					<p>La empresa de Multitext da las gracias al CTP Invu las Cañas por permitir el  desarrollo de esta empresa la cual nos permitira formarnos como personas y aprender mas sobre el ambiente laboral<p>
 				</div>
 			</div>		
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -673,7 +673,7 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="sngl_pricing">											
 					<h2 class="title_bg_3"> Premium </h2>
-					<h3><span class="currency">$</span>5.26<span class="monuth">/  m</span></h3>
+					<h3><span class="currency">$</span>8<span class="monuth"></span></h3>
 					<ul>
 						<li></i>15GB De Almacenamiento</li>
 						<li>Compartir, Descargar y Guardar Archivos</li>
@@ -746,7 +746,7 @@
   </div>
         </span>
       <h4>
-      <p>TOTAL A PAGAR<div><span class="price" style="color:black"><b>$5.26</b></span></p>
+      <p>TOTAL A PAGAR<div><span class="price" style="color:black"><b>$8</b></span></p>
       </h4>
 			</div>
 		</div>
@@ -911,7 +911,7 @@
 			  var mapOptions = {
 				zoom: 19,
 				scrollwheel: true,
-				center: new google.maps.LatLng(10.011655 , -84.200794)
+				center: new google.maps.LatLng(10.013741, -84.211510)
 			  };
 			  var map = new google.maps.Map(document.getElementById('googleMap'),
 				  mapOptions);
@@ -974,6 +974,37 @@ $(window).load(function(){
 	});
 
 });
+
+static TranslateTextResponse translateText(
+    String projectId,
+    String location,
+    String text,
+    String sourceLanguageCode,
+    String targetLanguageCode) {
+  try (TranslationServiceClient translationServiceClient = TranslationServiceClient.create()) {
+
+    LocationName locationName =
+        LocationName.newBuilder().setProject(projectId).setLocation(location).build();
+
+    TranslateTextRequest translateTextRequest =
+        TranslateTextRequest.newBuilder()
+            .setParent(locationName.toString())
+            .setMimeType("text/plain")
+            .setSourceLanguageCode(sourceLanguageCode)
+            .setTargetLanguageCode(targetLanguageCode)
+            .addContents(text)
+            .build();
+
+    // Call the API
+    TranslateTextResponse response = translationServiceClient.translateText(translateTextRequest);
+    System.out.format(
+        "Translated Text: %s", response.getTranslationsList().get(0).getTranslatedText());
+    return response;
+
+  } catch (Exception e) {
+    throw new RuntimeException("Couldn't create client.", e);
+  }
+}
 </script>
 
 

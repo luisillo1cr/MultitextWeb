@@ -14,18 +14,23 @@ color : #141414;
 font-family : "Lato", sans-serif;
 font-size : 25px;
 text-transform : capitalize;
-font-weight : 800;
+font-weight : 700;
 text-transform : uppercase;
 }
 a:hover {
 text-decoration : none;
 }
 .navbar {
-padding : 20px 0;
-transition : background 0.5s ease-in-out, padding 0.5s ease-in-out;
+padding : 5px 5px ;
+transition : background 1s ease-in-out, padding 1s ease-in-out ;
+	background-color: #2F8ACA!important;
+	box-shadow: 0 10px 6px 0 rgba(0,0,0,.09);
+	height: 100px;
+	max-height: 100px;
+	text-align : center;
 }
 .top-nav-collapse {
-padding : 0;
+padding : 1;
 }
 @keyframes spin {
 0% {
@@ -46,13 +51,13 @@ position : relative;
 color : #ffffff;
 display : block;
 font-family : lato;
-font-size : 14px;
+font-size : 15px;
 font-weight : bold;
 line-height : 32px;
 padding : 25px 14px;
 text-decoration : none;
 text-transform : capitalize;
-transition : all 0.4s 0s ease;
+transition : all 0.4s 0.1s ease;
 }
 #nav_menu ul li {
 float : left;
@@ -153,8 +158,8 @@ padding : 70px 0;
 }
 .progress {
 height : 35px;
-line-height : 35px;
-margin-bottom : 45px;
+line-height : 45px;
+margin-bottom : 55px;
 background : #F7C762;
 border-radius : 0;
 box-shadow : none;
@@ -162,15 +167,15 @@ list-style : none;
 }
 .progress-bar {
 font-weight : 600;
-line-height : 35px;
-padding-left : 20px;
+line-height : 45px;
+padding-left : 30px;
 text-align : left;
 }
 .progress-bar1 .progress-bar {
-background : #00AFF0;
+background : #2F8ACA;
 }
 #lts_sec {
-padding-top : 30px;
+padding-top : 40px;
 }
 .all_brouse_btn {
 border : #666666 solid 1px;
